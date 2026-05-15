@@ -10,19 +10,42 @@ export default function Contact() {
 
   const update = field => e => setForm({ ...form, [field]: e.target.value })
 
-  const handleSubmit = async e => {
-    e.preventDefault()
-    setStatus('sending')
-    setError('')
+  const handleSubmit = async (e) => {
+  e.preventDefault()
+  setStatus('sending')
+  setError('')
 
-    // For now, mailto fallback — replace with your Edge Function endpoint later
-    const subject = encodeURIComponent(`FlowSentinel Demo Request — ${form.company}`)
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\nMailboxes: ${form.mailboxes}\n\nMessage:\n${form.message}`
+  try {
+    const res = await fetch(
+      `${import.meta.env.VITE_REGISTRY_URL}/functions/v1/send-contact-email`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': import.meta.env.VITE_REGISTRY_ANON_KEY,
+          'Authorization': `Bearer ${import.meta.env.VITE_REGISTRY_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          name: form.name,
+          company: form.company,
+          email: form.email,
+          mailboxes: form.mailboxes,
+          message: form.message,
+        }),
+      }
     )
-    window.location.href = `mailto:shivadhali89@gmail.com?subject=${subject}&body=${body}`
+
+    const data = await res.json()
+    if (!res.ok || data.success === false) {
+      throw new Error(data.error || 'Submission failed')
+    }
+
     setStatus('sent')
+  } catch (err) {
+    setError('Something went wrong. Please email us directly at sales@supportu.cloud')
+    setStatus('idle')
   }
+}
 
   const inputClass = `
     w-full px-4 py-3 rounded-lg text-[14px] text-white placeholder-slate-500
