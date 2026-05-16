@@ -6,10 +6,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5">
-            <Logo size={26} />
+            {/* <Logo size={26} />
             <span className="text-[14px] font-semibold text-white">
               Flow<span className="text-teal">Sentinel</span>
-            </span>
+            </span> */}
+            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" />
           </div>
           <p className="text-[13px] text-slate-500 text-center">
             © {new Date().getFullYear()} FlowSentinel. Intelligent Workflow Continuity Monitoring.

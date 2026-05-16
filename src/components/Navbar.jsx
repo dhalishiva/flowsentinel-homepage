@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
-import Logo from './Logo.jsx'
+// import Logo from './Logo.jsx'
 
 const APP_URL = 'https://app.supportu.cloud'
 
@@ -31,10 +31,11 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Brand */}
           <a href="/" className="flex items-center gap-2.5 no-underline group">
-            <Logo size={30} />
+            {/* <Logo size={30} />
             <span className="text-[15px] font-semibold tracking-tight text-white">
               Flow<span className="text-teal">Sentinel</span>
-            </span>
+            </span> */}
+            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" />
           </a>
 
           {/* Desktop links */}
