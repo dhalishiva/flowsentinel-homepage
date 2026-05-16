@@ -68,7 +68,7 @@ export default function Hero() {
             Request a demo <ArrowRight size={16} />
           </a>
           <a
-            href="https://app.supportu.cloud"
+            href="https://app.flowsentinel.cloud"
             className="inline-flex items-center gap-2 px-7 py-3.5 text-[15px] font-medium text-white rounded-lg no-underline transition-colors"
             style={{ border: '1px solid rgba(255,255,255,0.12)' }}
             onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
