@@ -5,6 +5,7 @@ import Problem from './sections/Problem.jsx'
 import Features from './sections/Features.jsx'
 import Pricing from './sections/Pricing.jsx'
 import Contact from './sections/Contact.jsx'
+import Screenshots from './sections/Screenshots.jsx'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <Problem />
         <Features />
+        <Screenshots />
         <Pricing />
         <Contact />
       </main>
