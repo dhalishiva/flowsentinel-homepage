@@ -31,7 +31,9 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Brand */}
           <a href="/" className="flex items-center gap-2.5 no-underline group">
-            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-9" />
+            {/* <img src="/logo-dark.svg" alt="FlowSentinel" className="h-9" /> */}
+            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" style={{ width: '180px' }} />
+
           </a>
 
           {/* Desktop links */}

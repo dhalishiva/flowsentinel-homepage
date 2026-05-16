@@ -4,7 +4,7 @@ const tiers = [
   {
     name: 'Starter',
     tagline: 'For teams getting started',
-    price: '$20,000',
+    price: '$15,000',
     period: '/year',
     setup: '$10,000 one-time setup',
     highlight: false,
@@ -27,7 +27,7 @@ const tiers = [
   {
     name: 'Professional',
     tagline: 'For larger deployments',
-    price: '$35,000',
+    price: '$25,000',
     period: '/year',
     setup: '$10,000 one-time setup',
     highlight: true,
