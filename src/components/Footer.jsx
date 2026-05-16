@@ -10,7 +10,9 @@ export default function Footer() {
             <span className="text-[14px] font-semibold text-white">
               Flow<span className="text-teal">Sentinel</span>
             </span> */}
-            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" />
+            {/* <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" /> */}
+            <img src="/logo-dark.svg" alt="FlowSentinel" className="h-10" style={{ width: '180px' }} />
+
           </div>
           <p className="text-[13px] text-slate-500 text-center">
             © {new Date().getFullYear()} FlowSentinel. Intelligent Workflow Continuity Monitoring.
@@ -19,7 +21,7 @@ export default function Footer() {
             <a href="#contact" className="text-[13px] text-slate-500 hover:text-teal transition-colors no-underline">
               Contact
             </a>
-            <a href="https://app.supportu.cloud" className="text-[13px] text-slate-500 hover:text-teal transition-colors no-underline">
+            <a href="https://app.flowsentinel.cloud" className="text-[13px] text-slate-500 hover:text-teal transition-colors no-underline">
               Sign in
             </a>
           </div>

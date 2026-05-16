@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 // import Logo from './Logo.jsx'
 
-const APP_URL = 'https://app.supportu.cloud'
+const APP_URL = 'https://app.flowsentinel.cloud'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
