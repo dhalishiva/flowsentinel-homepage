@@ -3,15 +3,15 @@ import { useState } from 'react'
 const screenshots = [
   {
     id: 1,
-    label: 'Mailbox Monitoring',
-    caption: 'Monitor all your ReadSoft approval mailboxes in one place. Real-time token health, sync status, and instant error visibility.',
-    file: '/screenshots/1.webp',
-  },
-  {
-    id: 2,
     label: 'Secure Login',
     caption: 'Company-code based authentication keeps your monitoring portal secure and isolated from other tenants.',
     file: '/screenshots/2.webp',
+  },
+  {
+    id: 2,
+    label: 'Mailbox Monitoring',
+    caption: 'Monitor all your ReadSoft approval mailboxes in one place. Real-time token health, sync status, and instant error visibility.',
+    file: '/screenshots/1.webp',
   },
   {
     id: 3,
