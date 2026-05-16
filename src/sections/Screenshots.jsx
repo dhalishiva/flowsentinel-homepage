@@ -5,31 +5,31 @@ const screenshots = [
     id: 1,
     label: 'Mailbox Monitoring',
     caption: 'Monitor all your ReadSoft approval mailboxes in one place. Real-time token health, sync status, and instant error visibility.',
-    file: '/screenshots/1.png',
+    file: '/screenshots/1.webp',
   },
   {
     id: 2,
     label: 'Secure Login',
     caption: 'Company-code based authentication keeps your monitoring portal secure and isolated from other tenants.',
-    file: '/screenshots/2.png',
+    file: '/screenshots/2.webp',
   },
   {
     id: 3,
     label: 'Alert History',
     caption: 'Full audit trail of every alert sent. Filter by mailbox or alert type to quickly diagnose recurring issues.',
-    file: '/screenshots/3.png',
+    file: '/screenshots/3.webp',
   },
   {
     id: 4,
     label: 'SMTP Configuration',
     caption: 'Configure outbound alerts once and all notifications flow through your own email infrastructure.',
-    file: '/screenshots/4.png',
+    file: '/screenshots/4.webp',
   },
   {
     id: 5,
     label: 'Admin Users',
     caption: 'Create and manage your operations team. Role-based access with super admin controls.',
-    file: '/screenshots/5.png',
+    file: '/screenshots/5.webp',
   },
 ]
 
