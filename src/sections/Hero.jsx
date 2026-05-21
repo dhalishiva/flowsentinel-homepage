@@ -77,6 +77,11 @@ export default function Hero() {
             Sign in to app
           </a>
         </div>
+        {/* Below your two CTA buttons */}
+<p className="text-sm text-slate-300 flex items-center justify-center gap-2 mt-4">
+  <span className="text-emerald-400">✓</span>
+  Get fully onboarded in under 60 minutes
+</p>
 
         {/* Trust note */}
         <p className="opacity-0-init anim text-[12px] text-slate-500 flex items-center justify-center gap-1.5">

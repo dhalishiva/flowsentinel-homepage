@@ -42,7 +42,7 @@ export default function Contact() {
 
     setStatus('sent')
   } catch (err) {
-    setError('Something went wrong. Please email us directly at sales@supportu.cloud')
+    setError('Something went wrong. Please email us directly at admin@flowsentinel.cloud')
     setStatus('idle')
   }
 }
